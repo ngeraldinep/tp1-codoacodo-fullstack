@@ -5,8 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bienvenidos a Dulce y Sano!</title>
         <link rel="stylesheet" href="stylesheet.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Amita&family=Berkshire+Swash&family=Rouge+Script&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
         <header>
             <p>Registrate 	&#128221;</p> 
         </header>
@@ -35,58 +39,105 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     </head>
     <body>
-        <div class="container_formularios">
-            <h2>Registrate para recibir descuentos, participar de sorteos y promociones</h2>
-            <br>
-            <form>
-                <label id="nombre">Nombre:</label><br>
-                <input type="texto" id="nombre" name="nombre"><br>
-
-                <label id="apellido">Apellido:</label><br>
-                <input type="texto" id="apellido" name="apellido"><br>
-
-                <label id="barrio">Barrio:</label><br>
-                <input type="texto" id="barrio" name="barrio"><br>
-
-                <label id="correo">Correo electronico:</label><br>
-                <input type="texto" id="correo" name="correo"><br>
-
-                <label id="fnac">Fecha de nacimiento:</label><br>
-                <input type="texto" id="fnac" name="fnac"><br>
-                
-            </form>
-            <br>
-            <form>    
-                <label for="genero"><u>Ocupación</u></label><br>
-                    <label for="estudiante">Estudiante</label>
-                    <input type="radio" id="ocupacion1" name="ocupacion" value="estudiante">
-                    <br>
-
-                    <label for="am@decasa">Am@ de casa</label>
-                    <input type="radio" id="ocupacion2" name="ocupacion" value="am@decasa">
-                   <br>
-
-                   <label for="emplead@">Emplead@</label>
-                   <input type="radio" id="ocupacion3" name="ocupacion" value="emplead@">
-                    <br><br>      
-                </select>
-            </form>
-            <br>
-            <form>
-                <label for="genero">Género:</label>
-                <select name="Genero">
-                    <option value="0">Selccionar</option>
-                    <option value="1">Femenino</option>
-                    <option value="2">Masculino</option>
-                    <option value="3">No binario</option>
-                    <option value="4">Otro</option> 
-                </select> 
-            </form>
-            <br>
-            <input type="submit" style="margin-top: 20px; margin-bottom: 20px; padding: 10px;"  value="Enviar">
+        <div class="container_formularios" >
+            <h2 style="text-indent: 1em;"><b>Registrate para recibir descuentos, participar de sorteos y promociones</b></h2>
+                <form style="float:left; margin:2em;">
+                    <table>
+                        <tr>
+                            <td>
+                                <label id="nombre">Nombre:</label>
+                            </td>
+                            <td>
+                                <input type="texto" id="nombre" name="nombre"><br>
+                            </td>    
+                        </tr>    
+                        <tr>
+                            <td>
+                                <label id="apellido">Apellido:</label>
+                            </td>
+                            <td>    
+                                <input type="texto" id="apellido" name="apellido"><br>
+                            </td>    
+                        </tr>    
+                        <tr>
+                            <td>
+                                <label id="barrio">Barrio:</label>
+                            </td>
+                            <td>    
+                                <input type="texto" id="barrio" name="barrio"><br>
+                            </td>    
+                        </tr>
+                        <tr>    
+                            <td>
+                                <label id="correo">Correo electronico:</label>
+                            </td>
+                            <td>    
+                                <input type="texto" id="correo" name="correo"><br>
+                            </td>    
+                        </tr>
+                        <tr>    
+                            <td>
+                                <label id="fnac">Fecha de nacimiento:</label>
+                            </td> 
+                            <td>   
+                            <input type="texto" id="fnac" name="fnac"><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="genero">Género:</label>
+                            
+                            </td>
+                            <td>
+                                <select name="Genero">
+                                    <option value="0">Seleccionar</option>
+                                    <option value="1">Femenino</option>
+                                    <option value="2">Masculino</option>
+                                    <option value="3">No binario</option>
+                                    <option value="4">Otro</option>
+                                </select>
+                            </td>     
+                        </tr>
+                    </table>        
+                </form>
+               
+          
+                <form style="float:inherit; margin:2em;">    
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="genero"><u>Ocupación</u></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>               
+                                <label for="estudiante">Estudiante</label>
+                                <input type="radio" id="ocupacion1" name="ocupacion" value="estudiante">
+                            </td>
+                        </tr>
+                        <tr>    
+                            <td>    
+                                <label for="am@decasa">Am@ de casa</label>
+                                <input type="radio" id="ocupacion2" name="ocupacion" value="am@decasa">
+                            </td>
+                        </tr>
+                        <tr>        
+                            <td>
+                                <label for="emplead@">Emplead@</label>
+                                <input type="radio" id="ocupacion3" name="ocupacion" value="emplead@">
+                            </td>
+                        <tr>    
+                            <td>
+                                <input type="submit" style="margin-top: 20px; margin-bottom: 15px; padding: 10px;"  value="Enviar">
+                            </td>  
+                        </tr>           
+                        
+                    </table>
+                    
+                </form>
         </div>    
     </body>
-    <br>
+ 
     <footer>
         <div class="footer">
             <p>Dulce y Sano &reg;</p>
